@@ -262,3 +262,33 @@ body {
         width: 150px;
     }
 }
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .logo {
+        margin-bottom: 0;
+        /* Remove margin to keep everything aligned */
+    }
+    .nav ul {
+        display: flex;
+        /* Keep the navigation links horizontal */
+        flex-direction: row;
+        justify-content: flex-end;
+        /* Align navigation links to the right */
+        width: auto;
+        /* Prevent full-width stretching */
+        gap: 1rem;
+    }
+    .nav a {
+        font-size: 0.9rem;
+        /* Maintain consistent font size */
+        padding: 0;
+        /* Remove vertical padding to avoid stacking issues */
+        text-align: center;
+    }
+}
